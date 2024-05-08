@@ -1,34 +1,42 @@
-const App = () => {
+import { CustomerReviews, Footer, Hero, PopularProduct, Services, SpecialOffers, Subscribe, SuperQuality} from './sections/index.js';
+import NavBar from './components/NavBar';
+
+const App = () => (
   <main className="relative ">
-    Nav
+    <NavBar />
     <section className="xl:padding-1 wide:padding-r padding-b">
-      Hero
+      <Hero />
     </section>
     <section className="padding">
-      PopularProducts
+      <PopularProduct />
     </section>
     <section className="padding">
-      Super Quality
+      <SuperQuality />
     </section>
     <section className="padding-x py-10">
-      Services
+      <Services />
     </section>
     <section className="padding">
-      SpecialOffers
+      <SpecialOffers />
     </section>
 
     <section className="bg-pale-blue padding">
-      CustomerReviews
+      <CustomerReviews />
     </section>
     <section className="padding-x sm:py-32 py-16 w-full">
-      Subscribe
+      <Subscribe />
     </section>
-    <section className="bg-black padding-x padding-t pb-8">
-      Footer
+    <section className="bg-black padding-x padding-t">
+      <Footer />
     </section>
 
   </main>
-
-}
+); 
 
 export default App;
+
+// export default function App() {
+//   return ( 
+//     <h1>qwejdfoisa</h1>
+//   )
+// }
